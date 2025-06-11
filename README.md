@@ -11,3 +11,14 @@ The models were all fed different hyperparameters that were run through a random
 ## Logistic Regression
 ![Image](https://github.com/user-attachments/assets/bf6e7a96-1bff-460e-bedd-f01117b0faa3)
 Typically and most famously, logistic regression is used for binary classification using the sigmoid function. This outputs probabilities for both 0 and 1 classes. However, in our case, we are making predictions out of 5 different options(A-F). This means we will use a multiclass logistic regression. This model often uses a softmax function to compute probabilities for all classes.
+![Image](https://github.com/user-attachments/assets/425aef39-2a0f-4603-8b33-496b3fa3f6df)
+
+
+## KNN
+The K-Nearest Neighbors algorithm is one of the most popular classification models. It compares a data point to K number of training points and simply assigns the most frequent class among them. In terms of multiclass classification, KNN naturally supports it by using neighbor voting classification. The below gives a good visual of how it works
+![Image](https://github.com/user-attachments/assets/46b5ae5a-bca4-48e2-ab03-f2c133da1764)
+
+
+## Support Vector Machines
+Support Vector Machine Models are most commonly used for classification tasks as they work to find an optimal hyperplane to distinguish different categories. SVMs use kernels to find decision boundaries. In our model it uses a simple linear kernel to split data across a straight plane.
+[![Image](https://github.com/user-attachments/assets/46b5ae5a-bca4-48e2-ab03-f2c133da1764)](https://scikit-learn.org/stable/_images/sphx_glr_plot_iris_svc_thumb.png)
