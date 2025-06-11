@@ -26,8 +26,17 @@ Support Vector Machine Models are most commonly used for classification tasks as
 
 ## Decision Trees
 Decision Trees are a common model often used in other ensemble learning techniques. The model starts with the dataset at the root node, and then chooses important features to split the data into smaller subsets. This splitting process continues until a leaf node is reached, where a prediction is eventually made.
+![Image](https://github.com/user-attachments/assets/02cc7e89-8e65-4a44-a978-67601a24560d)
 
 
 ## SDG Classifier
-The final model used in the pipeline is the SDG Classifier. This model, depending on the loss function(hinge, log-loss), acts as an SVM/Logistic Regression. SDG classifiers are especially useful for large datasets, which ours is to an extent, at 5000 rows of data.
-![Image](https://github.com/user-attachments/assets/02cc7e89-8e65-4a44-a978-67601a24560d)
+The final model used in the pipeline is the SDG Classifier. This model, depending on the loss function(hinge, log-loss), acts as an SVM/Logistic Regression. SDG classifiers are especially useful for large datasets, which ours is to an extent, at 6600 rows of data.
+
+# Scoring/Testing
+We then scored and tested the best model, which happened to be the simplest, the Logistic Regression. This model made nearly 98% correct predictions on the test data, showing the power of these models.
+
+# VotingClassifier
+To finish, to see if a combination of the models would improve performance even more, I fed in a KNN, SVC, Logreg, and DT model into Python's VotingClassifier. This ensemble learning method feeds uses multiple models to make predictions, then finally votes(soft votes) on predictions. 
+![Image](https://github.com/user-attachments/assets/51a6b2e8-ef14-40ac-891b-af4d40b1c23b)
+
+# Thank You
