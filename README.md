@@ -21,4 +21,13 @@ The K-Nearest Neighbors algorithm is one of the most popular classification mode
 
 ## Support Vector Machines
 Support Vector Machine Models are most commonly used for classification tasks as they work to find an optimal hyperplane to distinguish different categories. SVMs use kernels to find decision boundaries. In our model it uses a simple linear kernel to split data across a straight plane.
-[![Image](https://github.com/user-attachments/assets/46b5ae5a-bca4-48e2-ab03-f2c133da1764)](https://scikit-learn.org/stable/_images/sphx_glr_plot_iris_svc_thumb.png)
+![Image](https://github.com/user-attachments/assets/f94e0ea1-76ac-445b-a0f1-bab09ef51ea7)
+
+
+## Decision Trees
+Decision Trees are a common model often used in other ensemble learning techniques. The model starts with the dataset at the root node, and then chooses important features to split the data into smaller subsets. This splitting process continues until a leaf node is reached, where a prediction is eventually made.
+
+
+## SDG Classifier
+The final model used in the pipeline is the SDG Classifier. This model, depending on the loss function(hinge, log-loss), acts as an SVM/Logistic Regression. SDG classifiers are especially useful for large datasets, which ours is to an extent, at 5000 rows of data.
+![Image](https://github.com/user-attachments/assets/02cc7e89-8e65-4a44-a978-67601a24560d)
