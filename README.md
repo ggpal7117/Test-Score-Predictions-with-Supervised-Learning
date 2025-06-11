@@ -1,2 +1,12 @@
 # Test-Score-Predictions-with-Supervised-Learning
-Using a machine learning pipeline, I found an optimal model to predict student test score(95% accuracy)
+Using a machine learning pipeline, I found an optimal model to predict student test scores (95% accuracy).
+
+# Data Preprocessing and One-Hot Encoding
+The first part of the project was exploring the dataset. Certain boolean values were initially set as "yes" and "no", so we had to change that. We also had to take into account missing values. After this, we needed to identify the categorical and numerical features to ultimately predict our target(test grade). Some features, such as "sleep," "tutoring," and "physical activity," are represented numerically but follow a normal distribution across a given range. These features need to be converted to a categorical form because of this. Using dummy variables, I could transform these features to categorical ones that the ML models could easily digest. 
+
+# Model Selection and Pipeline
+The five models decided were some of the most popular classification models in Machine Learning. Logistic Regression, Support Vector Machine(Classifier), K-Nearest Neighbors, Decision Trees, and SGD classifier.
+The models were all fed different hyperparameters that were run through a randomized search(time-efficient method) to find the parameters and score for that specific model. All data was scaled for this process as well.
+
+## Logistic Regression
+The l
