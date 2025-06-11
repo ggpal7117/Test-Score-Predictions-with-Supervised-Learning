@@ -10,3 +10,4 @@ The models were all fed different hyperparameters that were run through a random
 
 ## Logistic Regression
 ![Image](https://github.com/user-attachments/assets/bf6e7a96-1bff-460e-bedd-f01117b0faa3)
+Typically and most famously, logistic regression is used for binary classification using the sigmoid function. This outputs probabilities for both 0 and 1 classes. However, in our case, we are making predictions out of 5 different options(A-F). This means we will use a multiclass logistic regression. This model often uses a softmax function to compute probabilities for all classes.
