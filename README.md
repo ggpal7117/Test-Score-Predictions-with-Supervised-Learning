@@ -9,4 +9,4 @@ The five models decided were some of the most popular classification models in M
 The models were all fed different hyperparameters that were run through a randomized search(time-efficient method) to find the parameters and score for that specific model. All data was scaled for this process as well.
 
 ## Logistic Regression
-The l
+![Image](https://github.com/user-attachments/assets/bf6e7a96-1bff-460e-bedd-f01117b0faa3)
